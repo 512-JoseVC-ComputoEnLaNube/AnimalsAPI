@@ -61,6 +61,10 @@ El cuerpo para crear un animal es:
 
 `raza` es opcional. `nombre` y `especie` no pueden estar vacíos; `edad` debe ser un entero mayor o igual que cero y `peso` debe ser mayor que cero.
 
+## Bruno
+
+La colección de Bruno está en la carpeta `AnimalsAPi`. Para abrirla, selecciona **Open Collection** en Bruno y elige esa carpeta, que contiene `opencollection.yml` y las cuatro solicitudes CRUD en YAML.
+
 ## Migraciones
 
 La migración inicial está en `src/migrations`. TypeORM controla la tabla mediante migraciones y no mediante sincronización automática.
@@ -70,16 +74,6 @@ npm run migration:generate
 npm run migration:run
 npm run migration:revert
 ```
-
-## Bruno
-
-Abre la carpeta `bruno` como colección en Bruno y selecciona el ambiente `Local`.
-
-1. Ejecuta `Crear animal` y guarda el `id` de la respuesta.
-2. Cambia `animalId` en el ambiente `Local` por ese valor.
-3. Ejecuta `Listar animales`, `Actualizar animal` y `Eliminar animal`, en ese orden.
-
-Esta secuencia es la recomendada para el video de funcionamiento: enseña la solicitud, su respuesta y el cambio reflejado al listar animales.
 
 ## Verificación
 

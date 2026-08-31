@@ -1,0 +1,25 @@
+info:
+  name: Animals
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:3000/animals
+  body:
+    type: json
+    data: |-
+      {
+        "nombre": "Firulais",
+        "especie": "Canis lupus",
+        "raza": "Labrador",
+        "edad": 5,
+        "peso": 25.5
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
