@@ -1,0 +1,17 @@
+meta {
+  name: Actualizar animal
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{baseUrl}}/animals/{{animalId}}
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "peso": 13.2
+  }
+}

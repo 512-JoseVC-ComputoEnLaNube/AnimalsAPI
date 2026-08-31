@@ -1,0 +1,21 @@
+meta {
+  name: Crear animal
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/animals
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "nombre": "Luna",
+    "especie": "Canis lupus familiaris",
+    "raza": "Mestiza",
+    "edad": 3,
+    "peso": 12.5
+  }
+}
